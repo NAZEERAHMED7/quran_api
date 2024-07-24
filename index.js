@@ -25,6 +25,16 @@ function fetchQuran() {
         });
 }
 
+function highlightText() {
+    const searchWord = document.getElementById('searchWord').value;
+    const quranText = document.getElementById('quranText').innerHTML;
+
+    if (searchWord) {
+        const regex = new RegExp(`(${searchWord})`, 'gi');
+        const newText = quranText.replace(regex, '<span class="highlight">$1</span>');
+        document.getElementById('quranText').innerHTML = newText;
+    }
+}
 
 
 

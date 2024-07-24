@@ -137,6 +137,11 @@ select, button {
     overflow-y: auto;
 }
 
+.highlight {
+    background-color:#3bf071;
+    color: black;
+}
+
 .footer {
     display: flex;
     flex-wrap: wrap;
